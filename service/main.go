@@ -9,6 +9,7 @@ import (
 	"strconv"
 	"reflect"
 	"github.com/pborman/uuid"
+	"strings"
 )
 
 type Location struct {
@@ -31,7 +32,7 @@ const (
 	//PROJECT_ID = "around-xxx"
 	//BT_INSTANCE = "around-post"
 	// Needs to update this URL if you deploy it to cloud.
-	ES_URL = "http://104.154.247.50:9200"
+	ES_URL = "http://35.193.244.244:9200"
 )
 
 func main() {
@@ -129,6 +130,7 @@ func handlerSearch(w http.ResponseWriter, r *http.Request) {
 	}
 
 	fmt.Printf( "Search received: %f %f %s\n", lat, lon, ran)
+
 	// Create a client
 	client, err := elastic.NewClient(elastic.SetURL(ES_URL), elastic.SetSniff(false))
 	if err != nil {
@@ -158,7 +160,7 @@ func handlerSearch(w http.ResponseWriter, r *http.Request) {
 	// TotalHits is another convenience function that works even when something goes wrong.
 	fmt.Printf("Found a total of %d post\n", searchResult.TotalHits())
 
-	// Each is a convenience function that iterates over hits in a search result.
+	// Each is a convenient function that iterates over hits in a search result.
 	// It makes sure you don't need to check for nil values in the response.
 	// However, it ignores errors in serialization.
 	var typ Post
@@ -166,8 +168,11 @@ func handlerSearch(w http.ResponseWriter, r *http.Request) {
 	for _, item := range searchResult.Each(reflect.TypeOf(typ)) { // instance of
 		p := item.(Post) // p = (Post) item
 		fmt.Printf("Post by %s: %s at lat %v and lon %v\n", p.User, p.Message, p.Location.Lat, p.Location.Lon)
-		// TODO(student homework): Perform filtering based on keywords such as web spam etc.
-		ps = append(ps, p)
+		//Perform filtering based on keywords such as web spam etc.
+		if !containsFilteredWords(&p.Message) {
+			ps = append(ps, p)
+		}
+
 
 	}
 	js, err := json.Marshal(ps)
@@ -181,3 +186,15 @@ func handlerSearch(w http.ResponseWriter, r *http.Request) {
 	w.Write(js)
 }
 
+func containsFilteredWords(s *string) bool {
+	filteredWords := []string{
+		"fuck",
+		"shit",
+	}
+	for _, word := range filteredWords {
+		if strings.Contains(*s, word) {
+			return true
+		}
+	}
+	return false
+}
