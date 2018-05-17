@@ -20,16 +20,21 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+            <state relative-caret-position="722">
+              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
               <folding>
-                <element signature="e#14#155#0" expanded="true" />
+                <element signature="e#14#166#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ES_U</find>
+    </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.10.2/libexec" />
   <component name="IdeDocumentHistory">
@@ -62,7 +67,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -78,6 +82,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
@@ -267,16 +272,16 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info id="Nl-Palette" order="2" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Properties" order="3" />
+      <window_info id="Nl-Palette" order="2" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -299,10 +304,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -312,7 +327,7 @@
         <state relative-caret-position="1121">
           <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -322,7 +337,7 @@
         <state relative-caret-position="120">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -331,7 +346,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -340,7 +355,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -349,7 +364,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -359,7 +374,7 @@
         <state relative-caret-position="152">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -376,7 +391,7 @@
         <state relative-caret-position="152">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -397,10 +412,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        <state relative-caret-position="722">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
