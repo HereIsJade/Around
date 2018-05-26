@@ -42,7 +42,7 @@ const (
 	PROJECT_ID = "geo-based-porject"
 	BT_INSTANCE = "around-post"
 	// Needs to update this URL if you deploy it to cloud.
-	ES_URL = "http://35.202.167.121:9200"
+	ES_URL = "http://35.193.171.168:9200"
 	BUCKET_NAME = "post-images-101700"
 )
 
